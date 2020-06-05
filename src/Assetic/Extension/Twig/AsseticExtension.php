@@ -13,8 +13,10 @@ namespace Assetic\Extension\Twig;
 
 use Assetic\Factory\AssetFactory;
 use Assetic\ValueSupplierInterface;
+use Twig\Extension\AbstractExtension;
+use Twig\Extension\GlobalsInterface;
 
-class AsseticExtension extends \Twig_Extension implements \Twig_Extension_GlobalsInterface
+class AsseticExtension extends AbstractExtension implements GlobalsInterface
 {
     protected $factory;
     protected $functions;

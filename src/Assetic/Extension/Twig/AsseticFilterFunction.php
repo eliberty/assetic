@@ -11,7 +11,9 @@
 
 namespace Assetic\Extension\Twig;
 
-class AsseticFilterFunction extends \Twig_SimpleFunction
+use Twig\TwigFunction;
+
+class AsseticFilterFunction extends TwigFunction
 {
     public function __construct($name, $options = array())
     {
