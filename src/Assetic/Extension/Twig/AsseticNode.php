@@ -134,7 +134,7 @@ class AsseticNode extends Node
         ;
     }
 
-    protected function compileAssetUrl(CompilerCompiler $compiler, AssetInterface $asset, $name)
+    protected function compileAssetUrl(Compiler $compiler, AssetInterface $asset, $name)
     {
         if (!$vars = $asset->getVars()) {
             $compiler->repr($asset->getTargetPath());

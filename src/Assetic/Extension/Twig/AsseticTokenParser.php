@@ -16,7 +16,7 @@ use Assetic\Factory\AssetFactory;
 use Twig\TokenParser\AbstractTokenParser;
 use Twig\Token;
 use Twig\Error\SyntaxError;
-use Twig\Node;
+use Twig\Node\Node;
 
 class AsseticTokenParser extends AbstractTokenParser
 {

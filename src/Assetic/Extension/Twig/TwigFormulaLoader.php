@@ -16,7 +16,7 @@ use Assetic\Factory\Resource\ResourceInterface;
 use Psr\Log\LoggerInterface;
 use Twig\Environment;
 use Twig\Source;
-use Twig\Node;
+use Twig\Node\Node;
 
 /**
  * Loads asset formulae from Twig templates.
@@ -57,7 +57,7 @@ class TwigFormulaLoader implements FormulaLoaderInterface
      *
      * @return array An array of asset formulae indexed by name
      */
-    private function loadNode(Node $node)
+    private function loadNode( $node)
     {
         $formulae = array();
 
