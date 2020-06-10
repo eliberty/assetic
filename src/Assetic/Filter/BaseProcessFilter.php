@@ -11,7 +11,8 @@
 
 namespace Assetic\Filter;
 
-use Symfony\Component\Process\ProcessBuilder;
+use Symfony\Component\Process\Process;
+use Assetic\ProcessBuilder;
 
 /**
  * An external process based filter which provides a way to set a timeout on the process.
